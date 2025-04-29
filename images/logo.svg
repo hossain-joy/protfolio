@@ -1,0 +1,10 @@
+<svg width="243" height="107" viewBox="0 0 243 107" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .h { fill: #ff004f; font-weight: bold; font-family: 'Poppins', 'Arial Rounded MT Bold', sans-serif; font-size: 72px; }
+    .joy { fill: white; font-weight: bold; font-family: 'Poppins', 'Arial Rounded MT Bold', sans-serif; font-size: 72px; }
+  </style>
+  <rect width="243" height="107" fill="none"></rect>
+  <text x="10" y="75">
+    <tspan class="h">H.</tspan><tspan class="joy" dx="5">Joy</tspan>
+  </text>
+</svg>

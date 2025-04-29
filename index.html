@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossain Joy - Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82a75d89b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.svg" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Protfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Hossain</span></span> Joy</span><br>from Dhaka, Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a 23-year-old Computer Science student from Dhaka, Bangladesh. Passionate about building
+                        real-world tech solutions. From algorithm visualizers to food delivery systems and Arduino-based
+                        games, I love turning ideas into working projects.
+                    </p>
+                    <br>
+                    <p>
+                        My dream is to start my own IT company, and I'm constantly learning web development, AI, and
+                        cybersecurity to make it happen.
+                    </p>
+
+                    <!-- About tab Link -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- About Tab-Contents -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Designing</span><br>Design interface
+                            </li>
+                            <li>
+                                <span>Web Developping</span><br>Develop the website
+                            </li>
+                            <li>
+                                <span>Web App Developping</span><br>Develop Web Application
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experiance Tab-Contents -->
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li>
+                                <h3>Project: MST Visualizer</h3>
+                                <p><strong>Role:</strong> Developer</p>
+                                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Graph Theory Algorithms</p>
+                                <p><strong>Description:</strong> Designed and developed an interactive Minimum Spanning
+                                    Tree (MST) Visualizer that demonstrates Kruskal’s and Prim’s algorithms in
+                                    real-time. The project allows users to input graph data, visualize edges and nodes,
+                                    and understand how MST algorithms build optimal paths step by step. It helps users,
+                                    especially students, grasp complex algorithmic logic through clear graphical
+                                    representation.</p>
+                            </li>
+                            
+                            <li>
+                                <h3>Project: Food Delivery Website</h3>
+                                <p><strong>Role:</strong> Full Stack Developer</p>
+                                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Local Storage</p>
+                                <p><strong>Description:</strong> Created a food delivery platform with user
+                                    authentication, menu display, cart management, and order placement functionalities.
+                                    Focused on developing a seamless user experience and efficient data handling using
+                                    Local Storage.</p>
+                            </li>
+
+                            <li>
+                                <h3>Digital Logic Design – Tic Tac Toe Hardware Project</h3>
+                                <p><strong>Role:</strong> Project Lead</p>
+                                <p><strong>Technologies:</strong> ICs, Breadboard</p>
+                                <p><strong>Description:</strong> Led the development of a hardware-based Tic Tac Toe
+                                    game using ICs and breadboards. This project provided hands-on experience in digital
+                                    logic design, circuit analysis, and implementation.</p>
+                            </li>
+
+                            <li>
+                                <h3>Project: Soccer Bot</h3>
+                                <p><strong>Role:</strong> Robotics Developer</p>
+                                <p><strong>Technologies:</strong> Arduino, Motor Driver, Sensors, C++</p>
+                                <p><strong>Description:</strong> Built a Soccer Bot capable of navigating an arena,
+                                    detecting and chasing a ball, and attempting to score goals autonomously. Integrated
+                                    sensors for obstacle detection and ball tracking. Focused on precise movement
+                                    control, strategic decision-making, and real-time responsiveness to dynamic
+                                    environments. This project strengthened my skills in robotics, sensor integration,
+                                    and embedded programming.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab-Contents -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <h3>Daffodil International University</h3>
+                                <p><strong>Degree:</strong> Bachelor of Science in Computer Science & Engineering</p>
+                                <p><strong>Year:</strong> 2023 – Present</p>
+                            </li>
+                            <li>
+                                <h3>AHM Kamaruzzaman Government Degree College, Rajshahi</h3>
+                                <p><strong>Degree:</strong> Higher Secondary Certificate (HSC), Science</p>
+                                <p><strong>Year:</strong> 2020 – 2022</p>
+                            </li>
+                            <li>
+                                <h3>Government Laboratory High School, Rajshahi</h3>
+                                <p><strong>Degree:</strong> Secondary School Certificate (SSC), Science</p>
+                                <p><strong>Year:</strong> 2012 – 2020</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At magni modi, rem quas ad aliquid
+                        reiciendis? Minima earum ad quis reprehenderit repudiandae officiis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At magni modi, rem quas ad aliquid
+                        reiciendis? Minima earum ad quis reprehenderit repudiandae officiis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At magni modi, rem quas ad aliquid
+                        reiciendis? Minima earum ad quis reprehenderit repudiandae officiis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Protfolio---------------- -->
+    <div class="protfolio" id="protfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis eius expedita
+                            molestias voluptates voluptatum. Eveniet, vero atque quibusdam magni asperiores eligendi
+                            assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis eius expedita
+                            molestias voluptates voluptatum. Eveniet, vero atque quibusdam magni asperiores eligendi
+                            assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis eius expedita
+                            molestias voluptates voluptatum. Eveniet, vero atque quibusdam magni asperiores eligendi
+                            assumenda!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------Contact---------------- -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>ih.joy6679@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+8801778985273</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/ih.joy66"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/hossain-joy"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/hossain_joy__"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hossain-joy-23064728a"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV_Hossain_Joy.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Hossain Joy</p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVqzf04H218tOE205wj7VTQTWnS9CVBH0iPwNfL6UTMFbCpBBFAu4aNSAzQcA2E7BI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
